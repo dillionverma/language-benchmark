@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "compiling c"
+gcc -o fib-c ./fib.c 
+echo "compiling c++"
+g++ -o fib-cpp ./fib.cpp
+echo "compiling rust"
+rustc -o fib-rs ./fib.rs
+echo "copying ruby"
+cp fib.rb fib-rb
+echo "copying js"
+cp fib.js fib-js
+
+chmod +x fib-*

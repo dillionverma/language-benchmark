@@ -1,0 +1,25 @@
+#!/bin/bash
+
+N=${1:-38}
+
+echo -e "Calculating ${N} fibonacci number\n"
+
+echo "c"
+time ./fib-c $N
+echo ""
+
+echo "c++"
+time ./fib-cpp $N
+echo ""
+
+echo "rust"
+time ./fib-rs $N
+echo ""
+
+echo "javascript"
+time ./fib-js $N
+echo ""
+
+echo "ruby"
+time ./fib-rb $N
+echo ""
