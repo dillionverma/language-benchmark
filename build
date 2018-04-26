@@ -12,5 +12,7 @@ echo "copying ruby"
 cp fib.rb fib-rb
 echo "copying js"
 cp fib.js fib-js
+echo "copying python"
+cp fib.py fib-py
 
 chmod +x fib-*
