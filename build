@@ -4,6 +4,8 @@ echo "compiling c"
 gcc -o fib-c ./fib.c 
 echo "compiling c++"
 g++ -o fib-cpp ./fib.cpp
+echo "compiling java"
+javac fib.java
 echo "compiling rust"
 rustc -o fib-rs ./fib.rs
 echo "copying ruby"

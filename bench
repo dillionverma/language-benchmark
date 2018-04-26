@@ -12,6 +12,10 @@ echo "c++"
 time ./fib-cpp $N
 echo ""
 
+echo "java"
+time java fib $N
+echo ""
+
 echo "rust"
 time ./fib-rs $N
 echo ""
