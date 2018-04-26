@@ -1,15 +1,11 @@
-# Simple benchmark of nth Fibonacci number
-
----
+# Simple benchmark for nth Fibonacci number
 
 ## Usage
 
-1. Clone repository
+1. `git clone https://github.com/dillionverma/language-benchmark.git`
 2. Run `./build` to compile code
 3. Run `./bench` to benchmark code
   * Optional: Provide argument to bench like `./bench 34` to test calculation of different number
-
----
 
 ## Results
 
@@ -52,8 +48,6 @@ user    0m5.023s
 sys     0m0.037s
 
 ```
-
----
 
 ## C code
 
@@ -138,6 +132,4 @@ n = ARGV[0].to_i
 puts fib(n)
 ```
 
----
-
-Used for work term report Winter '18
+Used for work term report winter '18
