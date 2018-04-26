@@ -15,38 +15,51 @@ Calculating 38 fibonacci number
 c
 39088169
 
-real    0m0.322s
-user    0m0.313s
-sys     0m0.002s
+real    0m0.317s
+user    0m0.312s
+sys     0m0.001s
 
 c++
 39088169
 
-real    0m0.333s
-user    0m0.326s
-sys     0m0.003s
+real    0m0.321s
+user    0m0.316s
+sys     0m0.002s
+
+java
+39088169
+
+real    0m0.329s
+user    0m0.280s
+sys     0m0.037s
 
 rust
 39088169
 
-real    0m0.564s
-user    0m0.559s
+real    0m0.553s
+user    0m0.547s
 sys     0m0.002s
 
 javascript
 39088169
 
-real    0m0.655s
-user    0m0.623s
-sys     0m0.022s
+real    0m0.631s
+user    0m0.605s
+sys     0m0.020s
 
 ruby
 39088169
 
-real    0m5.079s
-user    0m5.023s
-sys     0m0.037s
+real    0m4.874s
+user    0m4.833s
+sys     0m0.029s
 
+python
+39088169
+
+real    0m15.404s
+user    0m15.314s
+sys     0m0.046s
 ```
 
 ## C code
@@ -85,6 +98,22 @@ int main(int argc, char *argv[]) {
 }
 ```
 
+## Java code
+
+```java
+class fib {
+  static int fib(int n) {
+    if (n <= 1) return n;
+    return fib(n-1) + fib(n-2);
+  }
+    
+  public static void main (String args[]) {
+    int n = Integer.parseInt(args[0]);
+    System.out.println(fib(n));
+  }
+}
+```
+
 ## Rust code
 
 ```rust
@@ -111,7 +140,7 @@ fn main() {
 
 function fib(n) {
   if (n <= 1) return n;
-  return fib(n - 1) + fib(n - 2);
+  return fib(n-1) + fib(n-2);
 }
 
 let n = parseInt(process.argv[2])
@@ -130,6 +159,20 @@ end
 
 n = ARGV[0].to_i
 puts fib(n)
+```
+
+## Python code
+
+```python
+#!/usr/bin/python
+import sys
+
+def fib(n):
+    if n <= 1: return n
+    return fib(n-1) + fib(n-2)
+
+n = int(sys.argv[1])
+print fib(n)
 ```
 
 Used for work term report winter '18
